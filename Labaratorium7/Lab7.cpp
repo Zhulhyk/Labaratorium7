@@ -5,13 +5,13 @@
 #include <vector>
 
 // ----------------------------------------------------
-// ZADANIE 1 - concepty + przeci¹¿enia funkcji (trudniej)
+// ZADANIE 1 - concepty + przeci¹¿enia funkcji
 // ----------------------------------------------------
 //
 // KROKI:
-// 1) Napisz koncept Arithmetic (liczby ca³kowite LUB zmiennoprzecinkowe).
+// 1) Napisz koncept Arithmetic (liczby ca³kowite OR zmiennoprzecinkowe).
 // 2) Napisz koncept PrintableNonArithmetic:
-//    - da siê wypisaæ przez std::cout (dla const T!)
+//    - da siê wypisaæ przez std::cout
 //    - NIE jest Arithmetic
 // 3) Napisz 3 przeci¹¿enia funkcji opis_typ():
 //    - Arithmetic -> "Typ arytmetyczny"
@@ -28,7 +28,7 @@ template <typename T> /* TODO */
 void opis_typ(T) {};
 
 // ----------------------------------------------------
-// ZADANIE 2 - concept z typem zwracanym + dodatkowy warunek
+// ZADANIE 2 - concept z typem zwracanym
 // ----------------------------------------------------
 //
 // KROKI:
@@ -87,11 +87,13 @@ int main()
 
     if (Uruchomzad == 1) {
         std::cout << "ZAD 1: CONCEPTY + PRZECIAZENIA\n";
-        opis_typ(10);
-        opis_typ(2.5);
-        opis_typ("abc");
-        struct X {};
-        opis_typ(X{});
+        // sprawdŸ opis_typ dla typu int
+        // sprawdŸ opis_typ dla typu double
+        // sprawdŸ opis_typ dla typu string
+        // sprawdŸ opis_typ dla typu char
+        // sprawdŸ opis_typ dla swojej dowolnej struktury, niebêd¹cej PrintableNotArithmetic
+        // sprawdŸ opis_typ dla swojej dowolnej struktury, bêd¹cej PrintableNotArithmetic
+        // opisz co siê stanie w przypadku char
     }
 
     if (Uruchomzad == 2) {
@@ -109,8 +111,7 @@ int main()
         wypisz_rozmiar(s);
         wypisz_rozmiar(v);
 
-        //int i = 5
-        //wypisz_rozmiar(i); - sprawdŸ co sie stanie
+        //sprawdŸ co sie stanie w przypadku argumenta int
     }
 
     if (Uruchomzad == 4) {
@@ -120,8 +121,7 @@ int main()
         wypisz_co_drugi(v);
         wypisz_co_drugi(s);
 
-        //std::list<int> l{7, 5, 16, 8};
-        //wypisz_co_drugi(l); - sprawdŸ co siê stanie
+        //sprawdŸ funkcjê wypisz_co_drugi na liœcie (std::list)
     }
 
     std::cout << "================\n";
